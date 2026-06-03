@@ -1,6 +1,76 @@
-*.env
-.env.*
-.env
+# Build
+bin/
+obj/
 
-bin/*
-obj/*
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# Test Results
+TestResults/
+
+# Coverage
+coverage/
+coverage.xml
+*.coverage
+*.coveragexml
+
+# Publish
+publish/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Temporary Files
+*.tmp
+*.temp
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# DotCover
+*.dotCover
+
+# BenchmarkDotNet
+BenchmarkDotNet.Artifacts/
+
+# Rider Cache
+.idea_modules/
+
+# JetBrains
+*.DotSettings.user
+
+# Local Environment
+.env
+.env.*
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# Crash Dumps
+*.dmp
+
+# Generated Files
+Generated/

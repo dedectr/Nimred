@@ -1,6 +1,6 @@
 using System.Net.NetworkInformation;
 using System.Net;
- 
+
 namespace Core.Ipscan
 {
 	public class Ipscan
@@ -21,11 +21,6 @@ namespace Core.Ipscan
 				}
 			}
 			Console.ReadKey();
-		}
-
-		public static IPAddress Ipaddres(){
-			var ipa = Dns.GetHostAddresses(Dns.GetHostName());
-			return ipa[1];
 		}
 	}
 }

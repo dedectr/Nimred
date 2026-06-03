@@ -16,7 +16,7 @@ class Program
 					// Console.WriteLine($"{ips}");
 					// ip = Console.ReadLine();
 					Ipscan.Pings("8.8.8.8");
-					Console.ReadKey();
+					// Console.ReadKey();
 					break;
 				default:
 					return;
