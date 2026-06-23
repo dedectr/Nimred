@@ -2,9 +2,7 @@
 
 ### Colaboradores Principais
 
-* André Alencar (@dedectr)
-* Alesson Baraúna (@alessonbarauna)
-* João Stack (@joaostack)
+* André Alencar (@dedectr)   
 
 ### Motivação
 
