@@ -3,12 +3,12 @@ using System.Net;
 
 namespace Core.Ipscan
 {
-	public class Ipscan
+	public class Ipscans
 	{
-		public static void Pings(string ip)
+		public static void Pings(IPAddress ip)
 		{
 			var ping = new Ping();
-			for (int j = 0; j < 5; j++)
+			for (int j = 0; j < 1; j++)
 			{
 				var resposta = ping.Send(ip, 1000);
 				if (resposta.Status == IPStatus.Success)
@@ -17,10 +17,10 @@ namespace Core.Ipscan
 				}
 				else
 				{
-					Console.WriteLine("Erro");
+					Console.WriteLine($"Erro {ip}");
 				}
 			}
-			Console.ReadKey();
+			// Console.ReadKey();
 		}
 	}
 }

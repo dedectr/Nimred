@@ -1,5 +1,6 @@
 ﻿using Core.Interface;
 using Core.Ipscan;
+using Core.Maperede;
 
 class Program
 {
@@ -15,8 +16,9 @@ class Program
 					// var ips = Ipscan.Ipaddres();
 					// Console.WriteLine($"{ips}");
 					// ip = Console.ReadLine();
-					Ipscan.Pings("8.8.8.8");
+					//Ipscans.Pings("8.8.8.8");
 					// Console.ReadKey();
+					Maperede.MaperedeIp();
 					break;
 				default:
 					return;
