@@ -10,7 +10,7 @@ namespace Core.Ipscan
 			var ping = new Ping();
 			for (int j = 0; j < 1; j++)
 			{
-				var resposta = ping.Send(ip, 1000);
+				var resposta = ping.Send(ip, 500);
 				if (resposta.Status == IPStatus.Success)
 				{
 					Console.WriteLine($"IP: {ip} | Ping: {resposta.RoundtripTime} ms");

@@ -9,7 +9,7 @@ namespace Core.Maperede
     {
         public static void MaperedeIp()
         {
-            var ipBase = "192.168.15.0";
+            var ipBase = "192.168.100.0";
             IPAddress ip = IPAddress.Parse(ipBase);
             byte[] bytsIp = ip.GetAddressBytes();
             for (int j = 1; j <= 254; j++)
