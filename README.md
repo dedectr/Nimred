@@ -10,9 +10,13 @@ Este projeto foi criado com o objetivo de fornecer uma ferramenta de aprendizado
 
 Seu desenvolvimento também tem como finalidade apoiar estudos pessoais, experimentação prática e o compartilhamento de conhecimento técnico entre estudantes e entusiastas da área.
 
+### requisitos
+[x] - Dotnet 10
 
 ### Instalação
+
 - Linux
+
 ```bash
 git clone https://github.com/dedectr/Nimred
 cd Nimred
