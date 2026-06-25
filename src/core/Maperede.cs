@@ -6,8 +6,12 @@ namespace Core.Maperede
 {
 	public class PortaRede
 	{
-		public static void Test(){
-			Console.WriteLine("foi");
+		public static void MaperedeIp(){
+			var ping = new Ping();
+			var ip = 0;
+			for(int j=0; j < 244;j++){
+				
+			}
 		}
 	}
 }
