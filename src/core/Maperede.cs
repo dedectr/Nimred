@@ -1,7 +1,6 @@
-using System;
 using System.Net;
 using System.Net.NetworkInformation;
-using Core.Ipscan;
+
 
 namespace Core.Maperede
 {
@@ -17,13 +16,29 @@ namespace Core.Maperede
                 try {
                     bytsIp[3] = (byte)j;
                     IPAddress ipAtual = new IPAddress(bytsIp);
-                    Ipscans.Pings(ipAtual);
-				
+                    Pings(ipAtual);
                 }
-                catch (Exception){
-                    Console.WriteLine("");
+                catch (Exception ex){
+                    Console.WriteLine($"erro {ex}");
                 }
             }
         }
+        public static void Pings(IPAddress ip)
+		{
+			var ping = new Ping();
+			for (int j = 0; j < 1; j++)
+			{
+				var resposta = ping.Send(ip, 500);
+				if (resposta.Status == IPStatus.Success)
+				{
+					Console.WriteLine($"IP: {ip} | Ping: {resposta.RoundtripTime} ms");
+				}
+				else
+				{
+					Console.WriteLine($"Erro {ip}");
+				}
+			}
+			// Console.ReadKey();
+		}
     }
 }
